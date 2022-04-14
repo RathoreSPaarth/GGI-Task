@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>thorTV</title>
+    <script src="index.js" defer></script>
+    <link rel="icon" href="./images/logo.png">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Cardo&display=swap" rel="stylesheet"> 
+<!--  -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@500&display=swap" rel="stylesheet"> 
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: white;
+            background-color: #479cd1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row" id="nav-bar" style=" margin-bottom: 10%; background-color: white;">
+            <div id="nav-bar" style="display: flex; width: 100%; height: 15vh;">
+                <div id="logo" style="margin: 1vw;">
+                    <img src="./images/logo.png" style=" height: 110%; width: 38%; margin-left: 15%;" alt="logo">
+                </div>
+                <div id="nav-btn" style="display: flex; justify-content: right; width: 100%; justify-content: space-evenly; margin-top: 3%;">
+                    <div id="home"> <button>Home</button> </div>
+                    <div id="clients-nav"><a href="#genre"><button>Genre</button></a></div>
+                    <div id="about"><a href=""><button>About</button></a></div>
+                    <div id="contact"><a href="#contactus"><button>Contact</button></a></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- nav bar for small screen -->
+
+        <div class="row" id="nav-bar-small-screen">
+            <div id="nav-bar-small-screen">
+                <div id="logo" style="margin: 1vw;">
+                    <img id="logo-small-screen" src="./images/logo.png" alt="logo">
+                </div>
+                <div id="nav-icon-btn">
+                     <img src="./images/note.png" style="height: 50%;width: 25%; margin-left: 70%; margin-top: 10%;" alt="nav-btn">
+                </div>
+               
+        </div>
+    </div>
+
+        <!-- /nav bar for small screen -->
+
+        <div class="row">
+            <div class="col-lg-1 col-1">
+                <div class="rotating"></div>
+              </div>
+
+            <div class="col-lg-5 col-12">
+                <div class="row">
+                    <div class="col-lg-12 col-12" style="color: white; display: flex; justify-content: center; font-size: 200%; text-align: center;">
+                        <p>
+                            What Do You Want To Watch Today?
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12" style="display: flex; justify-content: center;">
+                        <input type="text" placeholder="Type Any Movie" class="mr-3" id="movie-name" style="width: 80%;height: 6vh;">
+                        <button id="btn" type="submit" style="border: solid; border-radius: 5%;">SEARCH</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5 col-12" style="margin-top: -11%;" id="dynamic-text-col">
+                <div id="main-text">
+                    <div id="dynamic-text-wrapper">
+                        <h1 id="dynamic-text" style="color: black; margin-top: 5%; font-weight: 100;">
+                            Action
+                        </h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-1 col-1">
+                <div class="rotating-circle"></div>
+              </div>
+
+        </div>
+
+    </div>
+
+    <div class="row" id="details" style="color: black; margin-top: 5%;">
+    </div>
+
+    <div class="row">
+        <div class="col-lg-1 col-1"> <div class="rotating"></div></div>
+        <div class="col-lg-4 col-11" style="position: relative;">
+            <h1 style="font-weight: 900; font-size:200%;">
+                Contact Us
+            </h1>  
+            <h6 style="text-align: center; font-weight: 500; font-size:80%;">We would love to hear from you!</h6>
+
+        </div>
+        <div class="col-lg-3 col-5" id="contactus1">
+            <div class="flip-card">
+                    <div class="flip-card-front" style="text-align: center;">
+                        <img src="./images/callIcon.png" style="width: 20%; height: 20%;" alt="">
+                        <h5 class="brand-name" style="margin-top: 0%;" >+91 9876543210 <br> +91 7397235288</h5>
+                    </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-5" id="contactus2">
+            <div class="flip-card">
+                    <div class="flip-card-front" style="text-align: center;">
+                        <img src="./images/mailIcon.png" style="width: 20%; height: 20%;" alt="paarthsrgmail.com">
+                        <h5 class="brand-name"  style="margin-top: 0%;" >paarthsr@gmail.com</h5>
+                    </div>
+            </div>
+        </div>
+        <div class="col-lg-1 col-2"> <div class="rotating-circle"></div></div>
+    </div>
+
+
+</body>
+
+</html>
